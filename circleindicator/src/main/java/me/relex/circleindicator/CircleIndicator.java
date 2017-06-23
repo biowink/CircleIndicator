@@ -58,6 +58,7 @@ public class CircleIndicator extends LinearLayout {
     }
 
     private void init(Context context, AttributeSet attrs) {
+        if (isInEditMode()) return;
         handleTypedArray(context, attrs);
         checkIndicatorConfig(context);
     }
